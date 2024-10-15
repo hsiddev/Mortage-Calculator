@@ -1,19 +1,21 @@
 /* General Styles */
 html,
 body {
-  height: 100%; /* Ensure it fills the viewport */
-  width: 100%; /* Optional: Ensures full width */
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: hsl(202, 86%, 94%) !important;
   font-family: "Plus Jakarta Sans", sans-serif;
-  overflow: hidden; /* Avoid scrollbars if necessary */
+  overflow-x: hidden; /* Avoid horizontal scroll */
 }
+
 .mainboxcover {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
 }
 
 .mainbox {
@@ -24,6 +26,7 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Left Section */
@@ -189,6 +192,50 @@ body {
 
 .btndiv {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .mainbox {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .fbox,
+  .lbox {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .results-info {
+    width: 100%;
+  }
+
+  .radio-item label {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hd1 {
+    font-size: 20px;
+  }
+
+  .clright {
+    font-size: 12px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  .btn-calculate {
+    font-size: 14px;
+  }
+
+  .results-info h3 {
+    font-size: 18px;
+  }
 }

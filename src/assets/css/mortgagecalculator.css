@@ -1,0 +1,194 @@
+/* General Styles */
+html,
+body {
+  height: 100%; /* Ensure it fills the viewport */
+  width: 100%; /* Optional: Ensures full width */
+  margin: 0;
+  padding: 0;
+  background-color: hsl(202, 86%, 94%) !important;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow: hidden; /* Avoid scrollbars if necessary */
+}
+.mainboxcover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainbox {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Left Section */
+.fbox {
+  height: 100%;
+  width: 53%;
+  padding: 20px;
+  background-color: white;
+}
+
+.heading1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hd1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.clright {
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 5px !important;
+}
+
+.term-rate {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.mortgage-type {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.btn-calculate {
+  width: 100%;
+  background-color: #d4e157;
+  border: none;
+  color: black !important;
+  font-weight: 600 !important;
+  font-size: 16px;
+}
+
+.ic1 {
+  margin-right: 10px;
+}
+
+.txt1 {
+  font-weight: 600 !important;
+  color: rgb(128, 128, 128) !important;
+}
+
+.radio-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-item [type="radio"] {
+  display: none;
+}
+.radio-item + .radio-item {
+  margin-top: 15px;
+}
+.radio-item label {
+  display: block;
+  padding: 11px 60px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  min-width: 415px;
+  white-space: nowrap;
+  position: relative;
+  transition: 0.4s ease-in-out 0s;
+}
+.radio-item label:after,
+.radio-item label:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.radio-item label:after {
+  height: 19px;
+  width: 19px;
+  border: 2px solid hsl(61, 70%, 52%);
+  left: 19px;
+  top: calc(50% - 12px);
+}
+.radio-item label:before {
+  background: hsl(61, 70%, 52%);
+  height: 20px;
+  width: 20px;
+  left: 21px;
+  top: calc(50%-5px);
+  transform: scale(5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out 0s;
+}
+.radio-item [type="radio"]:checked ~ label {
+  border-color: hsl(61, 70%, 52%);
+  background-color: hsl(202, 86%, 94%);
+}
+.radio-item [type="radio"]:checked ~ label::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* Right Section */
+.lbox {
+  border-bottom-left-radius: 50px;
+  width: 47%;
+  background-color: hsl(202, 55%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(202, 202, 202);
+  text-align: center;
+}
+
+.results-info {
+  width: 350px;
+}
+
+.results-info h3 {
+  color: white !important;
+  margin-bottom: 10px;
+}
+
+.results-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.bg1 {
+  background-color: hsl(61, 70%, 52%) !important;
+  border-color: hsl(61, 70%, 52%) !important;
+}
+
+.btn1 {
+  height: 50px;
+  width: 60%;
+  border-radius: 50px !important;
+}
+
+.btndiv {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
